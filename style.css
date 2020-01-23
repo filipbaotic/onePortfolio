@@ -1,0 +1,167 @@
+body,
+html {
+    background: #FFFFFF;
+    font-family: Bodoni;
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: -0.3px;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    height: 150vh!important;
+}
+
+@font-face {
+    font-family: Bodoni;
+    src: url(Bodoni.ttf);
+}
+
+@font-face {
+    font-family: SFProText-Medium;
+    src: url(SF-Pro-Display-Medium.otf);
+    font-weight: Medium;
+}
+
+@font-face {
+    font-family: SFProText-Semibold;
+    src: url(SF-Pro-Display-Semibold.otf);
+}
+
+.left {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 50vw;
+    margin: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.left::after {
+    content: '';
+    flex-grow: 999999999;
+}
+
+.left div {
+    margin: 3px;
+    position: relative;
+    height: calc(25vh - 7.5px);
+    flex-grow: 1;
+    background: #7E9898;
+}
+
+.left div img {
+    max-width: 100%;
+    min-width: 100%;
+    height: calc(25vh - 7.5px);
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+.block {
+    margin: 0!important;
+    width: 50vw;
+    height: 3px!important;
+    background: transparent!important;
+    display: block;
+}
+
+.border1 {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 6px;
+    background: #fff;
+    z-index: 100;
+}
+
+.border2 {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 6px;
+    height: 100vh;
+    background: #fff;
+    z-index: 100;
+}
+
+.border3 {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 6px;
+    background: #fff;
+    z-index: 100;
+}
+
+.border4 {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 6px;
+    height: 100vh;
+    background: #fff;
+    z-index: 100;
+}
+
+.right {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: calc(50vw - 12px);
+    z-index: 10;
+}
+
+.brand {
+    position: relative;
+    height: calc(100vh - 12px);
+    background: #7E9898;
+    margin-bottom: 6px;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: calc(100% - 96px);
+}
+
+.title {
+    color: #FFFFFF;
+    font-family: Bodoni;
+    font-size: 54px;
+    line-height: 44px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sub {
+    color: #FFFFFF;
+    font-family: Georgia;
+    font-style: italic;
+    font-size: 18px;
+    text-transform: loewrcase;
+    text-align: center;
+    margin-top: -5px;
+}
+
+.about {
+    position: relative;
+    background: #C5D5D5;
+    height: calc(50vh - 6px);
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.about p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: calc(100% - 48px);
+    margin: auto;
+}
