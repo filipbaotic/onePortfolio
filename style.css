@@ -8,7 +8,6 @@ html {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    height: 150vh!important;
 }
 
 @font-face {
@@ -152,16 +151,7 @@ html {
 .about {
     position: relative;
     background: #C5D5D5;
-    height: calc(50vh - 6px);
+    padding: 36px 24px;
     margin-bottom: 6px;
     text-align: center;
-}
-
-.about p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    width: calc(100% - 48px);
-    margin: auto;
 }
